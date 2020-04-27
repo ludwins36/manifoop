@@ -3,7 +3,6 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Componente } from "src/app/interfaces/interfaces";
 import { User } from "../shared/user.class";
 import * as WC from "woocommerce-api";
-import { AngularFirestore } from "@angular/fire/firestore";
 import { Observable } from "rxjs";
 import { CacheValueFactory } from 'ionic-cache';
 
@@ -34,7 +33,7 @@ export class ServiceService {
   user: string;
   pass: string;
 
-  constructor(private http: HttpClient, private firestore: AngularFirestore) {
+  constructor(private http: HttpClient) {
     this.user = "Admint";
     this.pass = "Colombia2020!";
     this.url = "https://mimapi.club";

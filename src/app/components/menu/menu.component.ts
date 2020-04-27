@@ -16,7 +16,7 @@ import { QRScanner, QRScannerStatus } from "@ionic-native/qr-scanner/ngx";
 @Component({
   selector: "app-menu",
   templateUrl: "./menu.component.html",
-  styleUrls: ["./menu.component.scss"]
+  styleUrls: ["./menu.component.scss"],
 })
 export class MenuComponent implements OnInit {
   componentesAccount: Observable<Componente[]>;
@@ -45,7 +45,7 @@ export class MenuComponent implements OnInit {
     userLang = /(english|deutsch)/gi.test(userLang) ? userLang : "english";
     this.translate.use(userLang);
 
-    this.events.subscribe("user: change", user => {
+    this.events.subscribe("user: change", (user) => {
       if (user || user != null) {
         console.log("userchange");
         console.log(user);
@@ -54,7 +54,7 @@ export class MenuComponent implements OnInit {
     });
 
     this.storage.ready().then(() => {
-      this.storage.get("user").then(val => {
+      this.storage.get("user").then((val) => {
         console.log(val);
         if (val != null) {
           this.user = val;
@@ -62,8 +62,6 @@ export class MenuComponent implements OnInit {
       });
     });
   }
-
- 
 
   async ngOnInit() {
     this.componentesAccount = this.dataService.getMenuOptions();
@@ -75,12 +73,10 @@ export class MenuComponent implements OnInit {
   }
 
   logout() {
-    this.usersProv.logoutUser().then(() => {
-      this.storage.remove("user");
-      this.user = null;
-      this.storage.remove("cart_list");
-      this.router.navigateByUrl("/login");
-      this.menuCtrl.enable(false);
-    });
+    this.storage.remove("user");
+    this.user = null;
+    this.storage.remove("cart_list");
+    this.router.navigateByUrl("/login");
+    this.menuCtrl.enable(false);
   }
 }

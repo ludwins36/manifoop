@@ -54,45 +54,6 @@ export class RegisterPage implements OnInit {
 
   ngOnInit() {}
 
-  async onRegister() {
-    if (!this.signupForm.valid) {
-      console.log(this.signupForm.value);
-    } else {
-      this.presentLoading();
-      await this.authSvc.onRegister(this.user).then(() => {
-        authData => {
-          console.log(authData);
-        };
-
-        this.serviceProv
-          .getRestaurantUserProfile(this.currentUser.uid)
-          .on("value", snapshot => {
-            console.log(snapshot.val());
-
-            this.userProfiles = snapshot.val();
-
-            console.log(this.userProfiles);
-
-            this.loading.dismiss().then(() => {
-              let user = {
-                avt: this.userProfiles.facebook,
-                username: this.userProfiles.displayName,
-                fullname: this.userProfiles.lastName,
-                email: this.userProfiles.email,
-                address: this.userProfiles.address,
-                phone: this.userProfiles.phone,
-                id: this.currentUser.uid
-              };
-              this.storage.set("user", user);
-              this.events.publish("user: change", user);
-              //	console.log(data);
-              this.router.navigateByUrl("/inicio");
-            });
-          });
-      });
-    }
-  }
-
   async getAlert(message) {
     const alert = await this.alet.create({
       header: "Alerta",
