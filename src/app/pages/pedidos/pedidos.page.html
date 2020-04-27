@@ -1,0 +1,42 @@
+<ion-content>
+  <div class="content">
+    <ion-button class="boton-menu">
+      <ion-back-button color="light" defaultHref="/inicio"></ion-back-button>
+    </ion-button>
+    <ion-button class="boton-menu left">
+      <ion-menu-button>
+        <ion-icon class="fs-24 txt1" color="light" src="../../../assets/imgs/_ionicons_svg_md-menu.svg"></ion-icon>
+      </ion-menu-button>
+    </ion-button>
+  
+    <div class="content-pedidos">
+      <h2 class="txt-light title">Mis Pedidos.</h2>
+
+      <div class="line"></div>
+
+      <ion-list class="products" *ngIf="listProducts">
+          <ion-item lines="none" *ngFor="let cats of listProducts">
+            <div class="card-content" [routerLink]="'/inicio'">
+              <div class="card">
+                <div class="title-card">
+                  <h2>Pedido #{{cats.number}}</h2>
+                  <div class="producList" *ngFor="let prod of cats.line_items">
+                    <p>{{prod.name}}</p>
+                  </div>
+                 
+                </div>
+                <div class="card-item">
+                  <p class="descText" no-margin no-padding>${{cats.total}}</p>
+                </div>
+                <ion-button class="agregar">PEDIR DE NUEVO</ion-button>
+              </div> 
+               <img src="{{'assets/imgs/bg-order.jpg' }}" />
+            </div>
+          </ion-item>
+      </ion-list>
+  
+     
+    </div>
+  </div>
+
+</ion-content>

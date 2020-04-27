@@ -1,0 +1,77 @@
+<ion-content>
+  <!-- <app-header></app-header> -->
+  <ion-button class="boton-menu">
+    <ion-back-button color="light" defaultHref="/inicio"></ion-back-button>
+  </ion-button>
+  <ion-button class="boton-menu left">
+    <ion-menu-button>
+      <ion-icon class="fs-24 txt1" color="light" src="../../../assets/imgs/_ionicons_svg_md-menu.svg"></ion-icon>
+    </ion-menu-button>
+  </ion-button>
+
+
+
+  <img class="bg-cart1" [src]="img">
+  <!-- <img class="bg-cart2" src="{{'assets/imgs/bg-
+    cart2.png' }}"> -->
+
+
+
+  <div class="title-content">
+    <h2 class="title-general">{{title}}</h2>
+    <p class="description">{{description}}</p>
+    <!-- <img class="img-menu" (click)="presentActionSheet()" src="{{'assets/imgs/Menu.jpg' }}">
+      <img class="img-menu" style="margin-left: 16%;" src="{{'assets/imgs/reservar.png' }}"> -->
+  </div>
+
+  <div class="line"></div>
+
+
+  <ion-list class="products">
+    <ion-item class="item-categori">
+      <div style="width: 100%;">
+        <ion-label class="title-cat">Platos</ion-label>
+        <div *ngFor="let cats of categoryList">
+          <ion-item lines="none">
+            <div class="card-content"
+              [routerLink]="['/product-detail', {title: cats.name , owner_id: owner_id , description: cats.description, price: cats.price, proId: cats.id, img: cats.images[0].src}]">
+
+              <div class="card">
+                <div class="title-card">
+                  <h2>{{cats.name}}</h2>
+                  <!-- <div #data>
+                    {{getDescription(cats.description, data)}}
+    
+                  </div>
+                  -->
+                </div>
+                <div class="card-item">
+                  <p class="descText" no-margin no-padding>$ {{cats.price}}</p>
+                </div>
+                <ion-button class="agregar">AGREGAR</ion-button>
+              </div>
+              <img [src]="cats.images[0].src" />
+            </div>
+          </ion-item>
+        </div>
+      </div>
+    </ion-item>
+
+
+  </ion-list>
+
+
+
+
+  <!-- <div class="movies-flex content-categoris">
+    <div class="movie" >
+      <div class="title">{{categoryList.0.title }}</div>
+     
+
+    </div>
+  </div> -->
+
+
+
+
+</ion-content>

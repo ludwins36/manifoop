@@ -1,0 +1,34 @@
+<ion-content>
+  <div class="content">
+    <ion-button class="boton-menu">
+      <ion-back-button color="light" defaultHref="/inicio"></ion-back-button>
+    </ion-button>
+    <ion-button class="boton-menu left">
+      <ion-menu-button>
+        <ion-icon class="fs-24 txt1" color="light" src="../../../assets/imgs/_ionicons_svg_md-menu.svg"></ion-icon>
+      </ion-menu-button>
+    </ion-button>
+  
+    <div class="content-pedidos">
+      <h2 class="txt-light title">¿Necesitas Ayuda?</h2>
+      <p>
+        Nos pondremos en contacto contigo en menor tiempo posible para dar solución a tu solicitud
+      </p>
+
+      <div class="line"></div>
+      <ion-item class="title-cat">
+        <ion-label>Escribe aquí tu mensaje</ion-label>
+      </ion-item>
+      <ion-item class="ion-text-left mgt-20 fw-400 custon-input">
+
+        <ion-input #email  placeholder="Escribir aquí" 
+          type="text"  class="">
+        </ion-input>
+      </ion-item>
+
+      <ion-button class="agregar" (click)="createTicket()"  for="">Agregar</ion-button>
+     
+    </div>
+  </div>
+
+</ion-content>

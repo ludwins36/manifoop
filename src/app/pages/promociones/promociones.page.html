@@ -1,0 +1,49 @@
+<div class="content-slaides">
+  <div>
+    <h2 class="title-slide">Promos del día</h2>
+    <br>
+    <ion-slides pager="false">
+
+      <ion-slide *ngFor="let promo of promosList"
+        [routerLink]="['/product-detail', {title: promo.name , description: promo.description, price: promo.price, proId: promo.id, img: promo.images[0].src}]">
+        <h2 class="title-content2 product">{{promo.name}}</h2>
+
+        <img class="slides-img" [src]="promo.images[0].src" alt="" />
+
+        <h2 class="price">${{promo.price}}</h2>
+
+        <ion-button class="agregar">
+          AGREGAR
+        </ion-button>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+
+  <div class="line secon"></div>
+
+  <div>
+    <h2 class="title-slide">Recomendado del chef</h2>
+    <ion-slides pager="false">
+
+      <!-- <ion-slide *ngFor="let promo of featuredList"
+        [routerLink]="['/product-detail', {title: promo.name , description: promo.description, price: promo.price, proId: promo.id, img: promo.images[0].src}]">
+        <h2 class="title-content2 product">{{promo.name}}</h2>
+
+        <img class="slides-img" [src]="promo.images[0].src" alt="" />
+
+        <h2 class="title-promociones price">${{promo.price}}</h2>
+        <ion-button class="agregar">
+          AGREGAR
+        </ion-button>
+
+
+      </ion-slide> -->
+
+    </ion-slides>
+
+
+
+
+  </div>
+</div>

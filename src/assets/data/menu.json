@@ -1,0 +1,10 @@
+[{
+    "name": "MIS PEDIDOS",
+    "redirectTo": "/pedidos"
+}, {
+    "name": "DIRECCIONES",
+    "redirectTo": "/address"
+}, {
+    "name": "EDITAR PERFIL",
+    "redirectTo": "/profile-edit"
+}]

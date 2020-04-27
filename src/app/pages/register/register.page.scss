@@ -1,0 +1,21 @@
+ion-content{
+    --background: url('../../../assets/imgs/registro.jpg') no-repeat 60% 60%;
+}
+
+.content-name{
+    display: flex;
+    margin-top: 20%;
+}
+
+.lastname{
+    margin-left: 5px;
+}
+
+.registo-btn{
+    height: 50px;
+    margin: auto;
+    width: 70vw;
+
+    --border-radius: 30px;
+    --background: rgb(221, 158, 0);
+}

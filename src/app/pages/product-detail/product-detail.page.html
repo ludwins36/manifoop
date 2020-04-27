@@ -1,0 +1,122 @@
+<!-- <app-header></app-header> -->
+<ion-content>
+
+  <ion-button class="boton-menu">
+    <ion-back-button color="light" defaultHref="/inicio"></ion-back-button>
+  </ion-button>
+  <ion-button class="boton-menu left">
+    <ion-menu-button>
+      <ion-icon class="fs-24 txt1" color="light" src="../../../assets/imgs/_ionicons_svg_md-menu.svg"></ion-icon>
+    </ion-menu-button>
+  </ion-button>
+
+  <img class="bg-cart1" [src]="img">
+  <img class="bg-cart3" src="{{'assets/imgs/bg-4.png' }}">
+  <img class="bg-cart2" src="{{'assets/imgs/bg-cart2.png' }}">
+
+  <div class="title-content">
+    <div class="line" style="width: 15%; margin-top: -40px;"></div>
+
+    <div class="content-title">
+      <ion-item class="deseos">
+        <ion-label slot="start" class="title-product">{{title}}</ion-label>
+        <ion-icon slot="end" class="heart" name="heart"></ion-icon>
+
+
+      </ion-item>
+      <div class="description">
+        <p> {{description}}</p>
+
+      </div>
+    </div>
+
+
+    <ion-grid class="content-price">
+      <ion-row>
+        <ion-col>
+          <p class="descText"  no-margin no-padding>$ {{total}}</p>
+
+        </ion-col>
+        <ion-col>
+          <ion-button class="agregar" 
+            (click)="addCart()"
+            [routerLink]="['/cart', {id: id, title: title, price: total, desription: description, quanty: value, adicionales: listProducParams }]">
+            AGREGAR
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-item class="contador">
+            <ion-icon (click)="add()" class="btn-input" name="add"></ion-icon>
+            <ion-input type="number" size="1" [(ngModel)]="value" id="label-auto"></ion-input>
+            <ion-icon (click)="remove()" class="btn-input" name="remove"></ion-icon>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+
+    </ion-grid>
+  </div>
+  <div class="line"></div>
+
+  <ion-item class="title-cat">
+    <!-- <ion-icon name="arrow-dropright"></ion-icon> -->
+    <ion-label>Elije una bebida</ion-label>
+
+    
+
+
+  </ion-item>
+
+  <ion-list class="list">
+    <ion-item class="item-categori" *ngFor="let p of listBebidas">
+      <ion-checkbox #element slot="start" (click)="addBebida(element.checked, p)" mode="ios"></ion-checkbox>
+      <ion-label>{{p.name}}</ion-label>
+      <p class="descText" >${{p.price}}</p>
+
+    </ion-item>
+
+
+  </ion-list>
+
+  <ion-item class="title-cat">
+    <!-- <ion-icon name="arrow-dropright"></ion-icon> -->
+    <ion-label slot="start">Adicionales</ion-label>
+
+    <ion-label class="text-required">*Obligatorio</ion-label>
+
+
+  </ion-item>
+
+
+  <ion-list class="list">
+    <ion-item class="item-categori" *ngFor="let p of listAdicionales">
+      <ion-checkbox  #element slot="start" (click)="addBebida(element.checked, p)" mode="ios"></ion-checkbox>
+      <ion-label>{{p.name}}</ion-label>
+      <p class="descText" >${{p.price}}</p>
+
+
+    </ion-item>
+
+
+  </ion-list>
+
+  <ion-item class="title-cat">
+    <!-- <ion-icon name="arrow-dropright"></ion-icon> -->
+
+    <ion-label>¿Algun comentario Importante?</ion-label>
+
+  </ion-item>
+
+  <ion-item class="input-coment">
+    <!-- <ion-icon name="arrow-dropright"></ion-icon> -->
+
+    <ion-input type="text" [(ngModel)]="coment" class=""></ion-input>
+
+  </ion-item>
+
+
+
+
+
+</ion-content>

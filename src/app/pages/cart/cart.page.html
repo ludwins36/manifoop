@@ -1,0 +1,68 @@
+<!-- <app-header></app-header> -->
+
+
+<ion-content>
+
+  <ion-button class="boton-menu">
+    <ion-back-button color="light" defaultHref="/inicio"></ion-back-button>
+  </ion-button>
+  <ion-button class="boton-menu left">
+    <ion-menu-button>
+      <ion-icon class="fs-24 txt1" color="light" src="../../../assets/imgs/_ionicons_svg_md-menu.svg"></ion-icon>
+    </ion-menu-button>
+  </ion-button>
+
+  
+  <img class="bg-cart1" src="{{'assets/imgs/bg-cart.jpg'  }}">
+  <img class="bg-cart3" src="{{'assets/imgs/bg-4.png' }}">
+  <img class="bg-cart2" src="{{'assets/imgs/bg-cart2.png' }}">
+
+  <ion-grid class="grid-content">
+    <ion-row justify-content-end>
+      <ion-col align-self-start>
+
+        <ion-label class="label-total" for="">TOTAL</ion-label>
+        <br>
+        <label class="label-price" for="">${{total}}</label>
+
+      </ion-col>
+      <ion-col  justify-content-end>
+        
+          <ion-button class="agregar" (click)="addCart()"  for="">Pagar</ion-button>
+
+       
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="line"></div>
+
+  <ion-grid class="grid-content2">
+    <ion-row justify-content-end>
+      <ion-col align-self-start>
+
+        <label class="label-title-product" for="">{{title}}</label>
+
+      </ion-col>
+      <ion-col justify-content-end>
+        <ion-item class="contador">
+          <ion-icon (click)="add()" class="btn-input"  name="add"></ion-icon>
+          <ion-input type="number" [(ngModel)]="value"  id="label-auto"></ion-input>
+          <ion-icon (click)="remove()" class="btn-input"  name="remove"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="label-content-domicilio">
+      
+    </ion-row>
+  </ion-grid>
+  
+  <div class="line"></div>
+  <div class="label-remobe">
+    <ion-label (click)='clearCart()' for="">VACIAR MI CARRITO</ion-label>
+
+  </div>
+
+
+</ion-content>

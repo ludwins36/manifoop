@@ -1,0 +1,66 @@
+.content{
+    background-image: url('../../../assets/imgs/bg5.jpg');
+    height: 100%;
+}
+
+.custon-input{
+    --background: transparent;
+    border: 1px white solid;
+    border-radius: 1rem;
+    width: 94%;
+    margin: auto;
+    color: darkgray;
+
+    ion-input{
+        text-align: left;
+    }
+}
+
+
+
+.content-pedidos{
+    background: #2a2b2e;
+    position: relative;
+    top: 15%;
+    border-radius: 3rem 3rem 0 0;
+    height: 100%;
+    padding: 20px;
+
+    h2{
+        margin: 0;
+    }
+}
+
+.line {
+    border-bottom: 1px white solid;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.title-cat{
+    --background: rgb(63, 63, 63);
+    background: #3f3f3f;
+    border-radius: 2rem;
+    color: white;
+    width: 95%;
+    /* margin: auto; */
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+p{
+    color: darkgray;
+}
+
+.agregar {
+    --background: rgb(221, 158, 0);
+    width: 115px;
+    color: white;
+    font-weight: bold;
+    --border-radius: 1rem;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 20px;
+
+}

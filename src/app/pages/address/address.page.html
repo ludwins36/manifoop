@@ -1,0 +1,44 @@
+<ion-content>
+  <div class="content">
+    <ion-button class="boton-menu">
+      <ion-back-button color="light" defaultHref="/inicio"></ion-back-button>
+    </ion-button>
+    <ion-button class="boton-menu left">
+      <ion-menu-button>
+        <ion-icon class="fs-24 txt1" color="light" src="../../../assets/imgs/_ionicons_svg_md-menu.svg"></ion-icon>
+      </ion-menu-button>
+    </ion-button>
+
+    <div class="content-pedidos">
+      <h2 class="txt-light title">Direcciónes</h2>
+
+      <div class="line"></div>
+      <ion-item class="label" (click)="setAddressShipping()">
+        <ion-icon name="paper-plane" class="icon"></ion-icon>
+        <ion-label>
+          Ingresa una dirección de entrega
+        </ion-label>
+      </ion-item>
+
+      <ion-list class="list">
+          <ion-item class="item-categori" *ngFor="let p of listAddress">
+            <ion-label>{{p.address}}</ion-label>
+
+          </ion-item>
+      </ion-list>
+
+      <ion-item class="label" (click)="setAddressPayment()">
+        <ion-icon name="paper-plane" class="icon"></ion-icon>
+        <ion-label>
+          Ingresa una dirección de Facturación en caso de ser diferente a la de entrega
+        </ion-label>
+      </ion-item>
+
+
+
+    </div>
+
+
+  </div>
+
+</ion-content>

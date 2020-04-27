@@ -1,0 +1,19 @@
+<ion-content>
+  <ion-button class="boton-menu">
+    <ion-back-button color="light" defaultHref="/inicio"></ion-back-button>
+  </ion-button>
+  <ion-button class="boton-menu left">
+    <ion-menu-button>
+      <ion-icon class="fs-24 txt1" color="light" src="../../../assets/imgs/_ionicons_svg_md-menu.svg"></ion-icon>
+    </ion-menu-button>
+  </ion-button>
+
+  <div class="bg-cupons">
+    <h2 class="txt-light title">Cupones y Promociones</h2>
+    <div class="container">
+      <ngx-qrcode [qrc-element-type]="elementType" [qrc-value]="value"></ngx-qrcode>
+
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,192 @@
+ion-content{
+    --background: #0000;
+    
+}
+
+.poster-effect {
+    position: relative;
+    z-index: 99999;
+    margin-left: 33%;
+    width: 35%;
+    margin-top: 20%;
+}
+
+.title-content {
+    position: relative;
+    color: white;
+    z-index: 999;
+    margin: 5%;
+    margin-top: 10%;
+
+}
+
+.line {
+    border-bottom: 1px white solid;
+    width: 90%;
+    margin: 10px auto;
+    // position: absolute;
+    top: 45px;
+    left: 20px;
+  }
+
+.content-slaides{
+    padding-top: 15px;
+    background: #212121;
+    /* color: black; */
+    position: relative;
+}
+
+.price{
+    color: white;
+    position: relative;
+    right: 23%;
+    top: -4.5rem;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+
+.agregar {
+    --background: rgb(221, 158, 0);
+    --border-radius: 2rem;
+    width: 100px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+.title-content2{
+    color: white;
+    position: relative;
+    z-index: 9999;
+    left: 25%;
+    top: -25px;
+    font-weight: bold;
+}
+
+.slides-img {
+    width: 90%;
+    margin: auto;
+    border-radius: 1rem;
+    margin-bottom: 35px;
+}
+
+.title-slide {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.secon{
+    position: relative;
+    width: 90% !important;
+}
+
+.bg-cart2 {
+    position: absolute;
+    margin-top: 50%;
+}
+
+.bg-cart1 {
+    position: relative;
+    // top: 5%;
+}
+
+
+.products {
+    background: transparent;
+
+    .card {
+        color: white;
+        margin-right: -3%;
+        border-radius: 2rem;
+        padding: 0.5rem;
+        height: 140px;
+
+        .card-item {
+            top: 45px;
+            position: absolute;
+            margin-left: 70%;
+            margin-top: -10%;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+    }
+
+    ion-item {
+        --background: transparent;
+        width: 95%;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 2rem;
+        height: 140px;
+        position: absolute;
+        left: -1px;
+        z-index: -1;
+    }
+}
+
+.img-menu {
+    width: 40%;
+}
+
+.card-content {
+    display: -webkit-box;
+    height: 170px;
+}
+
+.item-categori {
+    --background: transparent;
+    color: white;
+
+}
+
+.title-general{
+    font-size: 20PX;
+    font-weight: bold;
+    // margin-top: -20%;
+
+}
+
+.description{
+    color: darkgrey;
+    width: 78%;
+    font-size: 15PX;
+    margin-bottom: 30px;
+}
+
+.title-cat{
+    --background: rgb(63, 63, 63);
+    background: rgb(63, 63, 63);
+    height: 40px;
+    padding: 10px;
+    border-radius: 1rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.left{
+    margin-left: 80%;
+
+}
+
+.title-card{
+    position: absolute;
+    h2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    p{
+        color: darkgrey;
+
+    }
+}
+
+

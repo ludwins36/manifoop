@@ -1,0 +1,29 @@
+<ion-content>
+  <ion-button class="boton-menu">
+    <ion-back-button color="light" defaultHref="/inicio"></ion-back-button>
+  </ion-button>
+  <div class="container">
+    <h2 class="title">Checkout</h2>
+    <div class="line"></div>
+
+    <div class="content">
+      <h3 class="data">Dirección</h3>
+      <p class="data left">Mi casa</p>
+    </div>
+    <div class="content">
+      <h3  class="data">Pago</h3>
+      <p  class="data left">{{paymentName}}</p>
+    </div>
+
+    <div class="resumen">
+      <p class="data">Costo del producto</p>
+      <p class="data left">$ {{price}}</p>
+
+    </div>
+
+    <ion-button class="agregar" (click)="createOrder()"  for="">PEDIR</ion-button>
+
+
+  </div>
+
+</ion-content>

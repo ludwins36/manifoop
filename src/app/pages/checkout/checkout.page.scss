@@ -1,0 +1,64 @@
+.container{
+    
+    color: white;
+    margin-top: 25%;
+}
+
+ion-content{
+    --background: rgb(42, 43, 46);
+}
+
+.title{
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.line {
+    border-bottom: 2px white solid;
+    width: 90%;
+    margin-top: 20px;
+    margin: 10px auto;
+}
+
+.data{
+    margin: 0;
+}
+
+.resumen{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.left{
+    margin-left: 40%;
+}
+
+.agregar {
+    --background: rgb(221, 158, 0);
+    width: 115px;
+    color: white;
+    font-weight: bold;
+    --border-radius: 1rem;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 20px;
+
+}
+
+.content{
+    --background: rgb(63, 63, 63);
+    background: #3f3f3f;
+    height: 40px;
+    padding: 10px;
+    border-radius: 1rem;
+    color: white;
+    display: -webkit-box;
+    display: flex;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}

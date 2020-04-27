@@ -1,0 +1,68 @@
+<ion-content>
+  <ion-button class="boton-menu">
+    <ion-back-button color="light" defaultHref="/inicio"></ion-back-button>
+  </ion-button>
+  <ion-button class="boton-menu left">
+    <ion-menu-button>
+      <ion-icon class="fs-24 txt1" color="light" src="../../../assets/imgs/_ionicons_svg_md-menu.svg"></ion-icon>
+    </ion-menu-button>
+  </ion-button>
+
+  <div class="bg-cupons">
+    <h2 class="txt-light title">Reservar Mesa</h2>
+    <div class="container">
+      <ion-list class="list">
+        <ion-radio-group [(ngModel)]="mesa">
+          <ion-item class="item-categori" *ngFor="let p of mesas">
+            <ion-label><b>{{p.name}}</b></ion-label>
+            <p class="descText" >{{p.stock_quantity}} mesas disponibles</p>
+            <ion-radio #element slot="end" [value]="p.id"></ion-radio>
+      
+          </ion-item>
+      
+        </ion-radio-group>
+        
+    
+      </ion-list>
+
+      <div class="line"></div>
+      <div class="dates">
+        <ion-item class="item">
+          <ion-label><b>Seleccione Fecha</b></ion-label>
+          <ion-datetime slot="end" display-timezone="utc"  class="date">
+          </ion-datetime>
+
+        </ion-item>
+      </div>
+      <div class="line"></div>
+
+      <div class="coment">
+        <ion-item>
+          <!-- <ion-icon name="arrow-dropright"></ion-icon> -->
+      
+          <ion-label>¿Algun comentario Importante?</ion-label>
+      
+        </ion-item>
+      
+        <ion-item class="input-coment">
+          <!-- <ion-icon name="arrow-dropright"></ion-icon> -->
+      
+          <ion-input type="text" placeholder="Escribe aquí." class="comentario"></ion-input>
+      
+        </ion-item>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="data">
+        <p >
+          Nos Pondremos en contacto contigo para confirmar los detalles de la reserva.
+        </p>
+      </div>
+
+      <ion-button class="agregar" (click)="reservar()"  for="">Reservar</ion-button>
+
+    </div>
+  </div>
+
+</ion-content>

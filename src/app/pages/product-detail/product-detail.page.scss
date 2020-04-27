@@ -1,0 +1,321 @@
+.poster-effect {
+    position: relative;
+    z-index: 99999;
+    top: 0;
+    margin-left: 33%;
+    width: 35%;
+}
+
+.title-content {
+    position: relative;
+    color: white;
+    z-index: 999;
+    margin: 5%;
+    margin-top: 60%;
+
+}
+
+.bg-cart2 {
+    position: absolute;
+    margin-top: 60%;
+}
+
+.deseos{
+    --background: transparent;
+    color: white;
+}
+
+.bg-cart1 {
+    position: absolute;
+    // height: 600px;
+}
+
+.description{
+    color: darkgrey;
+}
+
+.heart{
+    color: gray;
+    margin-left: 30%;
+    height: 45px;
+}
+
+.title-product{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.bg-cart3{
+    max-width: 110% !important;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: -5%;
+}
+
+.line {
+    border-bottom: 1px white solid;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.img-menu {
+    width: 40%;
+}
+
+
+.content-price, .content-botons, .contador{
+    color: white;
+    font-size: 1.3rem;
+
+
+    --background: transparent;
+    p{
+        width: 80px;
+        margin-left: -10px;
+        
+    }
+}
+
+.btn-input{
+    color: white;
+}
+
+#label-auto{
+    width: auto;
+}
+
+
+.contador{
+    margin-left: 12px;
+    border: 1px solid white;
+    padding-bottom: 0;
+    border-radius: 2rem;
+    height: 40px;
+
+    width: 100px;
+}
+
+.content-categoris {
+    position: relative;
+    z-index: 9999;
+    color: white;
+    margin: 5%;
+    font-weight: bold;
+    font-size: 20px;
+    width: 90%;
+    background: rgb(63, 63, 63);
+    border-radius: 10px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+
+    .title {
+        margin-left: 10px;
+    }
+}
+
+.descText{
+    margin-top: 15px;
+}
+
+.text-required{
+    color: rgb(221, 158, 0); 
+}
+
+.list{
+    background: transparent;
+
+    ion-item{
+        --background: rgb(42, 43, 46);
+        color: white;
+
+    }
+}
+
+
+.title-cat{
+    --background: rgb(63, 63, 63);
+    background: #3f3f3f;
+    border-radius: 2rem;
+    color: white;
+    margin: 10px;
+}
+
+.input-coment{
+    --background: transparent;
+    border: 1px white;
+    border: solid 1px white;
+    width: 90%;
+    margin: auto;
+    color: white;
+    border-radius: 2rem;
+}
+
+.agregar {
+    --background: rgb(221, 158, 0);
+    --border-radius: 2rem;
+    height: 50px;
+    width: 100px;
+    margin-left: 20%;
+    margin-top: 0;
+}
+
+.poster-effect {
+    position: relative;
+    z-index: 99999;
+    top: 0;
+    margin-left: 33%;
+    width: 35%;
+}
+
+.title-content {
+    position: relative;
+    color: white;
+    z-index: 999;
+    margin: 5%;
+    margin-bottom: 0;
+    margin-top: 60%;
+
+}
+
+.bg-cart2 {
+    position: absolute;
+    margin-top: 40%;
+}
+
+.deseos{
+    --background: transparent;
+    color: white;
+}
+
+.description{
+    color: darkgrey;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.heart{
+    color: gray;
+    margin-left: 30%;
+    font-size: 2rem;
+    width: 260px;
+    height: 60px;
+}
+
+.bg-cart3{
+    max-width: 110% !important;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: -5%;
+}
+
+.line {
+    border-bottom: 1px white solid;
+    width: 92%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.img-menu {
+    width: 40%;
+}
+
+
+.content-price, .content-botons, .contador{
+    color: white;
+    font-size: 1.3rem;
+
+
+    --background: transparent;
+    p{
+        width: 80px;
+        margin-left: -10px;
+        
+    }
+}
+
+.btn-input{
+    color: white;
+}
+
+#label-auto{
+    width: auto;
+}
+
+
+.contador{
+    margin-left: 12px;
+    border: 1px solid white;
+    padding-bottom: 0;
+    border-radius: 2rem;
+    width: 100px;
+}
+
+.content-categoris {
+    position: relative;
+    z-index: 9999;
+    color: white;
+    margin: 5%;
+    font-weight: bold;
+    font-size: 20px;
+    width: 90%;
+    background: rgb(63, 63, 63);
+    border-radius: 10px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+
+    .title {
+        margin-left: 10px;
+    }
+}
+
+.descText{
+    margin-top: 15px;
+}
+
+.text-required{
+    color: rgb(221, 158, 0); 
+}
+
+.list{
+    background: transparent;
+
+    ion-item{
+        --background: rgb(42, 43, 46);
+        color: white;
+
+    }
+}
+
+.title-cat{
+    --background: rgb(63, 63, 63);
+    background: #3f3f3f;
+    border-radius: 2rem;
+    color: white;
+    margin: 10px;
+}
+
+.input-coment{
+    --background: transparent;
+    border: 1px white;
+    border: solid 1px white;
+    width: 90%;
+    margin: auto;
+    color: white;
+    border-radius: 2rem;
+}
+
+.agregar {
+    --background: rgb(221, 158, 0);
+    --border-radius: 2rem;
+    height: 40px;
+    width: 100px;
+    margin-left: 20%;
+    margin-top: 0;
+}
+
+
+
